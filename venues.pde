@@ -2,69 +2,69 @@
 Coord placetocoord(String placetext){
   Coord tempcoord = new Coord();
   if(!placetext.equals("")) {
-   if(placetext.equals("Lake Pavillion/Terrace")) {
-     tempcoord.x = 350;
-     tempcoord.y = 540;
+   if(placetext.equals("Lake Pavillion/Terrace")) { //ok
+     tempcoord.x = 964;
+     tempcoord.y = 526;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Commons")) {
-     tempcoord.x = 350;
-     tempcoord.y = 540;
+   else if(placetext.equals("Commons")) { //ok
+     tempcoord.x = 967;
+     tempcoord.y = 504;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Great Lawn")) {
-     tempcoord.x = 370;
-     tempcoord.y = 600;
+   else if(placetext.equals("Great Lawn")) { //ok
+     tempcoord.x = 920;
+     tempcoord.y = 500;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Old West Palm Beach City Hall")) {
-     tempcoord.x = 310;
-     tempcoord.y = 490;
+   else if(placetext.equals("Old West Palm Beach City Hall")) { //ok
+     tempcoord.x = 638;
+     tempcoord.y = 412;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("S Dixie Highway")) {
-     tempcoord.x = 333;
-     tempcoord.y = 540;
+   else if(placetext.equals("S Dixie Highway")) { //ok
+     tempcoord.x = 641;
+     tempcoord.y = 1020;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Flagler")) {
-     tempcoord.x = 410;
-     tempcoord.y = 575;
+   else if(placetext.equals("Flagler")) { //ok
+     tempcoord.x = 892;
+     tempcoord.y = 755;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Fern Dock")) {
-     tempcoord.x = 554;
-     tempcoord.y = 0;
+   else if(placetext.equals("Fern Dock")) { //ok
+     tempcoord.x = 918;
+     tempcoord.y = 672;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Norton Park")) {
-     tempcoord.x = 0;
+   else if(placetext.equals("Norton Park")) { //out of bounds
+     tempcoord.x = 200;
      tempcoord.y = 200;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Meyer Amphiteatre")) {
-     tempcoord.x = 340;
-     tempcoord.y = 558;
+   else if(placetext.equals("Meyer Amphiteatre")) { //ok
+     tempcoord.x = 900;
+     tempcoord.y = 628;
      tempcoord.z = 0;
    }
    else if(placetext.equals("Dock")) {
-     tempcoord.x = 287;
-     tempcoord.y = 206;
+     tempcoord.x = 924;
+     tempcoord.y = 368;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Hibiscus Street from Quadrille to Sapodilla and Rosemary from Fern to Okeechobee")) {
-     tempcoord.x = 425;
-     tempcoord.y = 518;
+   else if(placetext.equals("Hibiscus Street from Quadrille to Sapodilla and Rosemary from Fern to Okeechobee")) { //ok
+     tempcoord.x = 684;
+     tempcoord.y = 834;
      tempcoord.z = 0;
    }
    else if(placetext.equals("City Place")) {
-     tempcoord.x = 0;
+     tempcoord.x = 200;
      tempcoord.y = 100;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Clematis Dock")) {
-     tempcoord.x = 343;
-     tempcoord.y = 308;
+   else if(placetext.equals("Clematis Dock")) { //ok
+     tempcoord.x = 987;
+     tempcoord.y = 570;
      tempcoord.z = 0;
    }
    else if(placetext.equals("South Trellis")) {
@@ -72,9 +72,9 @@ Coord placetocoord(String placetext){
      tempcoord.y = 287;
      tempcoord.z = 0;
    }
-   else if(placetext.equals("Centennial Square")) {
-     tempcoord.x = 364;
-     tempcoord.y = 541;
+   else if(placetext.equals("Centennial Square")) { //ok
+     tempcoord.x = 880;
+     tempcoord.y = 680;
      tempcoord.z = 0;
    }
   }
