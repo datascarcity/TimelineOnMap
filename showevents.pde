@@ -1,37 +1,3 @@
-public class Coord {
-  float x;
-  float y;
-  float z;
-}
-
-public class Event {
-  String name; //name of the event
-  String date; //date in strin format
-  String place; //venue
-  String attendance; //people that attented to the event
-  String day; //days since the beginning of the year
-  int n_date; //days since the beginning of the year in int format
-  
-  Coord o_place = new Coord();
-   
-  public Event(String[] pieces) {
-    name = pieces[0];
-    date = pieces[1];
-    place = pieces[2];
-    attendance = pieces[3];
-    day = pieces[4];
-   }
-   //Custom method to transform variables
-   void set() {
-    n_date=int(day);
-    o_place = placetocoord(place);
-   }
-}
-
-float log10 (float x) {
-  return (log(x) / log(10));
-}
-
 Event[] events;
 int n_rows;
 Table table;
@@ -42,7 +8,7 @@ int daycheck = 0;
 
 void setup() {
   hint(ENABLE_STROKE_PURE);
-  size(1654, 1169); //image size
+  size(1654, 1169); //image size == screen size
   fill(0);
   stroke(0);
   textSize(18);
@@ -66,9 +32,7 @@ void setup() {
 void draw() {
     stroke(0);
     fill(255);
-    rect(50,50,30,30);
-    fill(0);
-    text(daycheck, 55,70);
+    timebar(daycheck);
     for(int k = 0; k<n_rows; k++) {
         
       String name = events[k].name;
@@ -94,7 +58,7 @@ void draw() {
       //text("Estimated attendance "+attendance, events[k].o_place.x+attendance/8+5,events[k].o_place.y+50);
       if(day == daycheck) {
         fill(255,30);
-        ellipse(events[k].o_place.x,events[k].o_place.y,log10(attendance)*30,log10(attendance)*30);
+        ellipse(events[k].o_place.x,events[k].o_place.y,log10(attendance)*20,log10(attendance)*20);
         stroke(0);
         line(events[k].o_place.x-5,events[k].o_place.y,events[k].o_place.x+5,events[k].o_place.y);
         line(events[k].o_place.x,events[k].o_place.y-5,events[k].o_place.x,events[k].o_place.y+5);

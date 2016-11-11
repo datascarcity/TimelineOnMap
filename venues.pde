@@ -1,4 +1,4 @@
-
+//COORDINATES CONVERTER
 Coord placetocoord(String placetext){
   Coord tempcoord = new Coord();
   if(!placetext.equals("")) {
